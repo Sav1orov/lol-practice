@@ -5,6 +5,13 @@ const route = useRoute();
 const slug = route.params.slug;
 
 const champion = champions.find((item) => item.slug === slug);
+
+if (!champion) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Champion not found",
+  });
+}
 </script>
 
 <template>
