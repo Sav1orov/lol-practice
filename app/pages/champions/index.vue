@@ -7,9 +7,15 @@ function handleToggleFavorite(slug: string) {
 </script>
 
 <template>
+  <div v-if="!champions.length">
+    <h1>Error!</h1>
+  </div>
+
   <ChampionCard
-    v-if="champions[0]"
-    :champion="champions[0]"
+    v-else
+    v-for="champion in champions"
+    :key="champion.id"
+    :champions="champion"
     @toggle-favorite="handleToggleFavorite"
   />
 </template>

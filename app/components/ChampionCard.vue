@@ -2,7 +2,7 @@
 import type { IChampion } from "~~/shared/types/champion";
 
 const props = defineProps<{
-  champion: IChampion;
+  champions: IChampion;
 }>();
 
 const emit = defineEmits<{
@@ -11,15 +11,19 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <NuxtLink :to="`/champions/${champion.slug}`">
-    {{ champion.name }}
+  <br />
+  <NuxtLink :to="`/champions/${champions.slug}`">
+    {{ champions.name }}
   </NuxtLink>
-
-  {{ champion.role }}
-  {{ champion.difficulty }}
-  {{ champion.summary }}
-
-  <button type="button" @click="emit('toggleFavorite', champion.slug)">
+  <br />
+  {{ champions.role }}
+  <br />
+  {{ champions.difficulty }}
+  <br />
+  {{ champions.summary }}
+  <br />
+  <button type="button" @click="emit('toggleFavorite', champions.slug)">
     Add to favorites
   </button>
+  <br />
 </template>
