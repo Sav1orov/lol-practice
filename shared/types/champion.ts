@@ -35,4 +35,4 @@ type TSummonerSpells =
   | "Execute"
   | "Ghost";
 
-export type { IChampion, TChampionRole, TPlayStyle };
+export type { IChampion, TChampionRole, TPlayStyle, IChampionBuild };
