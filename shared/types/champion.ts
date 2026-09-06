@@ -7,22 +7,22 @@ interface IChampion {
   difficulty: number;
   image: string;
   summary: string;
-  builds: string[];
+  builds: IChampionBuild[];
 }
 
 interface IChampionBuild {
   style: TPlayStyle;
   primaryPath: TPrimaryPath;
   primaryRunes: string[];
-  secondaryPath: string[];
+  secondaryPath: string;
   secondaryRunes: string[];
-  summonerSpells: TSummonerSpells;
+  summonerSpells: TSummonerSpells[];
   explanation: string;
 }
 
 type TChampionRole = "top" | "jungle" | "mid" | "adc" | "support";
 
-type TPrimaryPath = "Sorcery" | "Domination" | "Resolve";
+type TPrimaryPath = "Sorcery" | "Domination" | "Resolve" | "Precision";
 
 type TPlayStyle = "safe" | "standard" | "aggressive";
 
