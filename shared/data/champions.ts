@@ -1,4 +1,4 @@
-import type { IChampion } from "../types/champion";
+import type { IChampion } from "../types/champion.ts";
 
 export const champions: IChampion[] = [
   {
