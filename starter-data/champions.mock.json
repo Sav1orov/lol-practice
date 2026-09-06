@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "slug": "ahri",
+    "name": "Ahri",
+    "title": "The Nine-Tailed Fox",
+    "role": "mid",
+    "difficulty": 2,
+    "image": "",
+    "summary": "A mobile mage who catches targets with Charm and finishes them with quick spell combinations.",
+    "builds": [
+      {
+        "style": "safe",
+        "primaryPath": "Sorcery",
+        "primaryRunes": ["Summon Aery", "Manaflow Band", "Transcendence", "Scorch"],
+        "secondaryPath": "Resolve",
+        "secondaryRunes": ["Bone Plating", "Overgrowth"],
+        "summonerSpells": ["Flash", "Teleport"],
+        "explanation": "A forgiving setup for stable laning and surviving difficult matchups."
+      },
+      {
+        "style": "standard",
+        "primaryPath": "Domination",
+        "primaryRunes": ["Electrocute", "Taste of Blood", "Eyeball Collection", "Ultimate Hunter"],
+        "secondaryPath": "Sorcery",
+        "secondaryRunes": ["Manaflow Band", "Transcendence"],
+        "summonerSpells": ["Flash", "Ignite"],
+        "explanation": "A balanced setup for lane pressure, picks and reliable burst damage."
+      },
+      {
+        "style": "aggressive",
+        "primaryPath": "Domination",
+        "primaryRunes": ["Electrocute", "Sudden Impact", "Eyeball Collection", "Ultimate Hunter"],
+        "secondaryPath": "Sorcery",
+        "secondaryRunes": ["Absolute Focus", "Scorch"],
+        "summonerSpells": ["Flash", "Ignite"],
+        "explanation": "A high-pressure setup focused on early trades and burst kills."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "garen",
+    "name": "Garen",
+    "title": "The Might of Demacia",
+    "role": "top",
+    "difficulty": 1,
+    "image": "",
+    "summary": "A durable fighter who trades with simple combinations and executes weakened enemies.",
+    "builds": [
+      {
+        "style": "safe",
+        "primaryPath": "Resolve",
+        "primaryRunes": ["Grasp of the Undying", "Demolish", "Second Wind", "Overgrowth"],
+        "secondaryPath": "Precision",
+        "secondaryRunes": ["Triumph", "Legend: Tenacity"],
+        "summonerSpells": ["Flash", "Teleport"],
+        "explanation": "A durable setup for difficult lanes and short, controlled trades."
+      },
+      {
+        "style": "standard",
+        "primaryPath": "Precision",
+        "primaryRunes": ["Conqueror", "Triumph", "Legend: Tenacity", "Last Stand"],
+        "secondaryPath": "Resolve",
+        "secondaryRunes": ["Conditioning", "Overgrowth"],
+        "summonerSpells": ["Flash", "Ignite"],
+        "explanation": "A general-purpose fighter setup combining sustained damage and durability."
+      },
+      {
+        "style": "aggressive",
+        "primaryPath": "Precision",
+        "primaryRunes": ["Conqueror", "Triumph", "Legend: Alacrity", "Last Stand"],
+        "secondaryPath": "Sorcery",
+        "secondaryRunes": ["Nimbus Cloak", "Celerity"],
+        "summonerSpells": ["Flash", "Ignite"],
+        "explanation": "An aggressive setup for chasing targets and forcing early all-ins."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "jinx",
+    "name": "Jinx",
+    "title": "The Loose Cannon",
+    "role": "adc",
+    "difficulty": 2,
+    "image": "",
+    "summary": "A marksman who scales into team fights and gains huge momentum after a takedown.",
+    "builds": [
+      {
+        "style": "safe",
+        "primaryPath": "Precision",
+        "primaryRunes": ["Fleet Footwork", "Presence of Mind", "Legend: Bloodline", "Cut Down"],
+        "secondaryPath": "Sorcery",
+        "secondaryRunes": ["Absolute Focus", "Gathering Storm"],
+        "summonerSpells": ["Flash", "Barrier"],
+        "explanation": "A safer setup with lane sustain and protection against enemy burst."
+      },
+      {
+        "style": "standard",
+        "primaryPath": "Precision",
+        "primaryRunes": ["Lethal Tempo", "Presence of Mind", "Legend: Alacrity", "Cut Down"],
+        "secondaryPath": "Sorcery",
+        "secondaryRunes": ["Absolute Focus", "Gathering Storm"],
+        "summonerSpells": ["Flash", "Heal"],
+        "explanation": "A balanced scaling setup for consistent damage in extended team fights."
+      },
+      {
+        "style": "aggressive",
+        "primaryPath": "Precision",
+        "primaryRunes": ["Lethal Tempo", "Triumph", "Legend: Alacrity", "Coup de Grace"],
+        "secondaryPath": "Domination",
+        "secondaryRunes": ["Taste of Blood", "Treasure Hunter"],
+        "summonerSpells": ["Flash", "Ghost"],
+        "explanation": "A snowball-oriented setup for extended fights and chasing after takedowns."
+      }
+    ]
+  }
+]

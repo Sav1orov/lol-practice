@@ -110,7 +110,7 @@ feat: add application layout
 
 ```text
 shared/types/champion.ts
-server/data/champions.ts
+shared/data/champions.ts
 ```
 
 ### Опиши типы
@@ -151,7 +151,7 @@ safe | standard | aggressive
 
 ### Данные
 
-Самостоятельно добавь минимум трёх чемпионов, например `Ahri`, `Garen` и `Jinx`. На первом этапе изображения могут быть обычными строками-заглушками.
+Исходные mock-данные подготовлены в `starter-data/champions.mock.json`. Это только данные: файл намеренно не подключён к приложению. Создай и типизируй рабочий массив самостоятельно в `shared/data/champions.ts`. На первом этапе поле изображения может оставаться пустой строкой.
 
 ### Подсказки
 
@@ -349,11 +349,12 @@ server/api/champions/[slug].get.ts
 
 ### Действия
 
-1. Первый endpoint возвращает список чемпионов.
-2. Добавь поддержку query-параметров `search` и `role`.
-3. Второй endpoint возвращает одного чемпиона по slug.
-4. Для неизвестного slug сервер должен возвращать 404.
-5. Проверь endpoint напрямую через браузер или DevTools Network.
+1. Перенеси массив из `shared/data/champions.ts` в `server/data/champions.ts`.
+2. Первый endpoint возвращает список чемпионов.
+3. Добавь поддержку query-параметров `search` и `role`.
+4. Второй endpoint возвращает одного чемпиона по slug.
+5. Для неизвестного slug сервер должен возвращать 404.
+6. Проверь endpoint напрямую через браузер или DevTools Network.
 
 ### Подсказки
 
