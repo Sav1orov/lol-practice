@@ -1,4 +1,4 @@
-import { champions } from "~~/shared/data/champions";
+import { champions } from "~~/server/data/champions";
 
 export default defineEventHandler((event) => {
   const query = getQuery(event);

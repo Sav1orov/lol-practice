@@ -3,6 +3,7 @@ import type { IChampion } from "~~/shared/types/champion";
 
 const props = defineProps<{
   champions: IChampion;
+  isFavorite: boolean;
 }>();
 
 const emit = defineEmits<{
@@ -22,8 +23,10 @@ const emit = defineEmits<{
   <br />
   {{ champions.summary }}
   <br />
+
+
   <button type="button" @click="emit('toggleFavorite', champions.slug)">
-    Add to favorites
+    {{ isFavorite ? "Delete from favorites" : "Add to favorites" }}
   </button>
   <br />
 </template>

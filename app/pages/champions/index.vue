@@ -8,8 +8,10 @@ const {
   default: () => [],
 });
 
+const { favoriteSlugs, toggleFavorite, isFavorite } = useFavorites();
+
 function handleToggleFavorite(slug: string) {
-  console.log("favorite added: ", slug);
+  toggleFavorite(slug);
 }
 
 const searchQuery = ref("");
@@ -65,6 +67,7 @@ const filteredChampions = computed(() => {
       v-else
       v-for="champion in filteredChampions"
       :key="champion.id"
+      :is-favorite="isFavorite(champion.slug)"
       :champions="champion"
       @toggle-favorite="handleToggleFavorite"
     />
